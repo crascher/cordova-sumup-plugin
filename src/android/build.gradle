@@ -41,6 +41,6 @@ dependencies {
         transitive = true
     }
 
-	   debugCompile project(path: "CordovaLib", configuration: "debug")
-	    releaseCompile project(path: "CordovaLib", configuration: "release")
+	   //debugCompile project(path: "CordovaLib", configuration: "debug")
+	    //releaseCompile project(path: "CordovaLib", configuration: "release")
 }
