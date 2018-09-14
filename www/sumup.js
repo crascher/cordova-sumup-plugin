@@ -1,10 +1,4 @@
-cordova.define("cordova-plugin-sumup.Sumup", function(require, exports, module) {
 var Sumup = function() {};
-
-/*var CountryError = function(code, message) {
-  this.code = code || null;
-  this.message = message || '';
-};*/
 
 Sumup.prototype.pay = function (success, failure, amount, currencycode, email, tel) {
   cordova.exec(success, failure, 'Sumup', 'pay', [amount, currencycode, email, tel]);
@@ -37,4 +31,3 @@ if (module.exports) {
   module.exports = Sumup;
 }
 
-});
