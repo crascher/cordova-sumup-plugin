@@ -22,6 +22,12 @@ android {
     defaultConfig {
         versionCode 1
         versionName "2.3.0"
+
+	javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+	}
     }
 
   packagingOptions {
